@@ -1,0 +1,40 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*=============== VARIABLES SCSS =============*/
+:root{
+
+    /*========== Colors ==========*/
+    --body-color: #fff
+    --text-color-whiter:#fff;
+    --text-color-dark:#000;
+    --title-color-whiter:#FFFFFF;
+    --title-color-abyss-navy-blue:#00458c;
+
+    /*========== Fonte e tipografia  ==========*/
+    --body-font: "Inter", sans-serif;
+
+    /*========== Fonte e tipografia  ==========*/
+    --normal-font-size: 1rem;
+    --font-size-xxs: 0.625rem;   /* Extra Extra Small */
+    --font-size-xs: 0.75rem;     /* Extra Small */
+    --font-size-sm: 0.875rem;    /* Small */
+    --font-size-md-sm: 1rem;     /* Medium Small */
+    --font-size-md: 1.125rem;    /* Medium */
+    --font-size-md-lg: 1.25rem;  /* Medium Large */
+    --font-size-lg-sm: 1.5rem;   /* Large Small */
+    --font-size-lg: 1.75rem;     /* Large */
+    --font-size-xl-sm: 2rem;     /* Extra Large Small */
+    --font-size-xl: 2.25rem;     /* Extra Large */
+    --font-size-xxl-sm: 2.5rem;  /* Extra Extra Large Small */
+    --font-size-xxl: 2.75rem;    /* Extra Extra Large */
+    --font-size-xxxl-sm: 3rem;   /* Extra Extra Extra Large Small */
+    --font-size-xxxl: 3.25rem;   /* Extra Extra Extra Large */
+    --font-size-xxxxl: 3.5rem;   /* Extra Extra Extra Extra Large */
+
+    /*========== Font weight ==========*/
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
