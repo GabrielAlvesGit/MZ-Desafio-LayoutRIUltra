@@ -33,8 +33,19 @@ ul {
   list-style: none;
 }
 
+p{
+  color: var(--primary-color-hematite);
+  margin: 0 0;
+}
+
 a {
+  color: var(--title-color-abyss-navy-blue);
   text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    opacity: .5;
+    transition: .35s all;
+  }
 }
 
 button {
