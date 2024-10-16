@@ -11,6 +11,17 @@ remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('admin_print_styles', 'print_emoji_styles');
 
+
+/*---------------------------------------------------------------------------------------------*/
+
+/*=============== Importação do CSS dentro da function - (Sem uso do Href='/style' no header) ===============*/
+function head_css() {
+  wp_enqueue_style('style_css', get_template_directory_uri() . '/style.css');
+}
+
+add_action('wp_enqueue_scripts', 'head_css');
+
+
 /*---------------------------------------------------------------------------------------------*/
 
 /*=============== Register Menu  ===============*/

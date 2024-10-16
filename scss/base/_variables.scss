@@ -15,6 +15,8 @@
     --primary-color-hematite: #58585a;
     --primary-color-sky-shlong: #009ddc;
     --primary-color-white: #fff;
+    --primary-color-white-transparent: rgba(255, 255, 255, 0.85);
+    --primary-color-black: #000; 
     
 
     /*========== Fonte e tipografia  ==========*/
@@ -49,6 +51,7 @@
 
     /*========== Margens ==========*/
     --mb-0-5: 0.5rem; // 8
+    --mb-0-875:0.875rem; // 14
     // --mb-0-625: 0.625rem;
     // --mb-0-75: 0.75rem;
     // --mb-0-938: 0.938rem;
@@ -67,6 +70,10 @@
     --pd-0-625: 0.625rem; // 10
     --pd-0-75: 0.75rem; //12
     --pd-1-25: 1.25rem; // 20
+    --pd-2-188: 2.188rem;//35
+    --pd-1-688: 1.688rem; // 27
+    --pd-1-5:1.5rem; // 24
+    --pd-0-75rem:0.75rem; // 12
     // --pd-0-875: 0.875rem;
     // --pd-1: 1rem;
     // --pd-1-125: 1.125rem;
@@ -78,7 +85,9 @@
     // --pd-3: 3rem;
 
     /*========== Gap ==========*/
-    --gap-0-625: 0.625rem;    /* 10
+    --gap-0-625: 0.625rem;    /* 10*/
+    --gap-0-875: 0.875rem; /*14 */
+    --gap-2-5: 2.5rem; /* 40 */
     // --gap-xs: 0.25rem;    /* Extra Small */
     // --gap-sm: 0.5rem;     /* Small */
     // --gap-md-sm: 0.75rem; /* Medium Small */
