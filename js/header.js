@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ============ Header ============ */
 /* ============ Menu ============ */
 var menu = document.querySelector('.header__bottom__navigation');
@@ -16,7 +15,7 @@ function toggleMenu() {
 }
 
 headerBottomToggle.addEventListener('click', toggleMenu);
-=======
+
 /* ============ Header ============ */
 /* ============ Menu ============ */
 var menu = document.querySelector('.header__bottom__navigation');
@@ -34,5 +33,5 @@ function toggleMenu() {
 }
 
 headerBottomToggle.addEventListener('click', toggleMenu);
->>>>>>> 2ceefa4cc0032ce840c6cb1f8d826e3d81e0f8cb
+
 closeIcon.addEventListener('click', toggleMenu);
