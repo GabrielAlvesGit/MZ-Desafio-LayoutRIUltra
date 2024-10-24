@@ -17,6 +17,9 @@
     --primary-color-white: #fff;
     --primary-color-white-transparent: rgba(255, 255, 255, 0.85);
     --primary-color-black: #000; 
+    --primary-color-abyss-navy-blue:#00458c;
+    --primary-color-fbi-blue: #01325d;
+    --primary-color-rated-r:#0060a4;
     
 
     /*========== Fonte e tipografia  ==========*/
@@ -27,7 +30,7 @@
     --font-size-xxs: 0.625rem;   /* Extra Extra Small */
     --font-size-xs: 0.688rem; 
     --font-size-sm: 0.875rem;    /* Small */
-    //--font-size-xs: 0.75rem;     /* Extra Small */
+    --font-size-xss: 0.75rem;     /* Extra Small */
     //
     //--font-size-md-sm: 1rem;     /* Medium Small */
     //--font-size-md: 1.125rem;    /* Medium */
@@ -50,12 +53,13 @@
     --font-bold: 700;
 
     /*========== Margens ==========*/
+    --mb-0: 0rem; // 0
     --mb-0-5: 0.5rem; // 8
     --mb-0-875:0.875rem; // 14
-    // --mb-0-625: 0.625rem;
+    --mb-0-625: 0.625rem;
     // --mb-0-75: 0.75rem;
     // --mb-0-938: 0.938rem;
-    // --mb-1-0: 1rem;
+    --mb-1-0: 1rem;
     // --mb-1-25: 1.25rem;
     // --mb-1-4: 1.4rem;
     // --mb-1-5: 1.5rem;
@@ -74,7 +78,7 @@
     --pd-1-688: 1.688rem; // 27
     --pd-1-5:1.5rem; // 24
     --pd-0-75rem:0.75rem; // 12
-    // --pd-0-875: 0.875rem;
+    --pd-0-563: 0.563rem;
     // --pd-1: 1rem;
     // --pd-1-125: 1.125rem;
     // --pd-1-25: 1.25rem;
@@ -88,12 +92,13 @@
     --gap-0-625: 0.625rem;    /* 10*/
     --gap-0-875: 0.875rem; /*14 */
     --gap-2-5: 2.5rem; /* 40 */
+    --gap-lg-sm: 1.5rem;  /* 24 */
     // --gap-xs: 0.25rem;    /* Extra Small */
     // --gap-sm: 0.5rem;     /* Small */
     // --gap-md-sm: 0.75rem; /* Medium Small */
     // --gap-md: 1rem;       /* Medium */
     // --gap-md-lg: 1.25rem; /* Medium Large */
-    // --gap-lg-sm: 1.5rem;  /* Large Small */
+   
     // --gap-lg: 2rem;       /* Large */
     // --gap-xl-sm: 2.5rem;  /* Extra Large Small */
     // --gap-xl: 3rem;       /* Extra Large */

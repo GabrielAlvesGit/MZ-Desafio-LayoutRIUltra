@@ -1,0 +1,63 @@
+.pageHome__banners{
+  margin: 0 auto;
+  width: 100%;
+  height: 490px;
+  overflow: hidden;
+  
+  &__banner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+    > input {
+      display: none;
+    }
+
+    &__list {
+      &__item {
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+        height: 490px;
+        margin-left: -100%;
+        transition: 0.35s all;
+
+        &.active {
+          margin-left: 0;
+        }
+
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: 100%;
+        }
+      }
+    }
+
+    &__navManual {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      margin: 35% 0 0 0;
+      gap: 10px;
+
+      &__btn {
+        border: 1px solid #ff0054;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.35s all;
+
+        &:hover {
+          background-color: #ff0054;
+        }
+
+        &.active {
+          background-color: #ff0054; /* Cor da bolinha ativa */
+        }
+      }
+    }
+  }
+}
