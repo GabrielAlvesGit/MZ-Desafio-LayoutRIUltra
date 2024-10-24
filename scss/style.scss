@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 Theme Name: Ultra RI
 Theme URI: http://ri-ultra.com/
@@ -13,3 +14,19 @@ Version: 1.0.0
 @import './base/variables';
 @import './global/header';
 @import './pages/bannerVideo';
+=======
+/*
+Theme Name: Ultra RI
+Theme URI: http://ri-ultra.com/
+Author: MZ Group - Gabriel Alves Viana
+Author URI: http://www.mzgroup.com/
+Description: Tema Criado ultra RI
+Version: 1.0.0
+*/
+
+/*=============== Imports SCSS =============*/
+@import './base/grid';
+@import './base/reset';
+@import './base/variables';
+@import './global/header';
+>>>>>>> 2ceefa4cc0032ce840c6cb1f8d826e3d81e0f8cb

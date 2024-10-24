@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*=============== GOOGLE FONTS ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -108,4 +109,116 @@
     // --gap-xxxl: 5rem;     /* Extra Extra Extra Large */
     // --gap-xxxxl: 5.5rem;  /* Extra Extra Extra Extra Large */
 
+=======
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*=============== VARIABLES SCSS =============*/
+:root{
+
+    /*========== Colors ==========*/
+    --hue: 0;
+    --body-color: #fff;
+    --body-color-black-transparent: rgba(0,0,0,.65);
+    --text-color-whiter:#fff;
+    --text-color-dark:#000;
+    --title-color-whiter:#FFFFFF;
+    --title-color-abyss-navy-blue:#00458c;
+    --primary-color-hematite: #58585a;
+    --primary-color-sky-shlong: #009ddc;
+    --primary-color-white: #fff;
+    --primary-color-white-transparent: rgba(255, 255, 255, 0.85);
+    --primary-color-black: #000; 
+    --primary-color-abyss-navy-blue:#00458c;
+    --primary-color-fbi-blue: #01325d;
+    --primary-color-rated-r:#0060a4;
+    
+
+    /*========== Fonte e tipografia  ==========*/
+    --body-font: "Inter", sans-serif;
+
+    /*========== Fonte e tipografia  ==========*/
+    --normal-font-size: 1rem;
+    --font-size-xxs: 0.625rem;   /* Extra Extra Small */
+    --font-size-xs: 0.688rem; 
+    --font-size-sm: 0.875rem;    /* Small */
+    --font-size-xss: 0.75rem;     /* Extra Small */
+    //
+    //--font-size-md-sm: 1rem;     /* Medium Small */
+    //--font-size-md: 1.125rem;    /* Medium */
+    //--font-size-md-lg: 1.25rem;  /* Medium Large */
+    //--font-size-lg-sm: 1.5rem;   /* Large Small */
+    //--font-size-lg: 1.75rem;     /* Large */
+    //--font-size-xl-sm: 2rem;     /* Extra Large Small */
+    //--font-size-xl: 2.25rem;     /* Extra Large */
+    //--font-size-xxl-sm: 2.5rem;  /* Extra Extra Large Small */
+    //--font-size-xxl: 2.75rem;    /* Extra Extra Large */
+    //--font-size-xxxl-sm: 3rem;   /* Extra Extra Extra Large Small */
+    //--font-size-xxxl: 3.25rem;   /* Extra Extra Extra Large */
+    //--font-size-xxxxl: 3.5rem;   /* Extra Extra Extra Extra Large */
+
+    /*========== Font weight ==========*/
+    --font-light: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*========== Margens ==========*/
+    --mb-0: 0rem; // 0
+    --mb-0-5: 0.5rem; // 8
+    --mb-0-875:0.875rem; // 14
+    --mb-0-625: 0.625rem;
+    // --mb-0-75: 0.75rem;
+    // --mb-0-938: 0.938rem;
+    --mb-1-0: 1rem;
+    // --mb-1-25: 1.25rem;
+    // --mb-1-4: 1.4rem;
+    // --mb-1-5: 1.5rem;
+    // --mb-2: 2rem;
+    // --mb-3-125: 3.125rem;
+
+
+    /*========== Padding ==========*/
+    --pd-0: 0rem;
+    --pd-0-188: 0.188rem; // 3
+    --pd-0-25: 0.25rem; // 4
+    --pd-0-625: 0.625rem; // 10
+    --pd-0-75: 0.75rem; //12
+    --pd-1-25: 1.25rem; // 20
+    --pd-2-188: 2.188rem;//35
+    --pd-1-688: 1.688rem; // 27
+    --pd-1-5:1.5rem; // 24
+    --pd-0-75rem:0.75rem; // 12
+    --pd-0-563: 0.563rem;
+    // --pd-1: 1rem;
+    // --pd-1-125: 1.125rem;
+    // --pd-1-25: 1.25rem;
+    // --pd-1-5: 1.5rem;
+    // --pd-1-75: 1.75rem;
+    // --pd-2: 2rem;
+    // --pd-2-5: 2.5rem;
+    // --pd-3: 3rem;
+
+    /*========== Gap ==========*/
+    --gap-0-625: 0.625rem;    /* 10*/
+    --gap-0-875: 0.875rem; /*14 */
+    --gap-2-5: 2.5rem; /* 40 */
+    --gap-lg-sm: 1.5rem;  /* 24 */
+    // --gap-xs: 0.25rem;    /* Extra Small */
+    // --gap-sm: 0.5rem;     /* Small */
+    // --gap-md-sm: 0.75rem; /* Medium Small */
+    // --gap-md: 1rem;       /* Medium */
+    // --gap-md-lg: 1.25rem; /* Medium Large */
+   
+    // --gap-lg: 2rem;       /* Large */
+    // --gap-xl-sm: 2.5rem;  /* Extra Large Small */
+    // --gap-xl: 3rem;       /* Extra Large */
+    // --gap-xxl-sm: 3.5rem; /* Extra Extra Large Small */
+    // --gap-xxl: 4rem;      /* Extra Extra Large */
+    // --gap-xxxl-sm: 4.5rem;/* Extra Extra Extra Large Small */
+    // --gap-xxxl: 5rem;     /* Extra Extra Extra Large */
+    // --gap-xxxxl: 5.5rem;  /* Extra Extra Extra Extra Large */
+
+>>>>>>> 2ceefa4cc0032ce840c6cb1f8d826e3d81e0f8cb
 }
