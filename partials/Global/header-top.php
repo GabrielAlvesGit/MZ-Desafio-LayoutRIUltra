@@ -1,10 +1,23 @@
 <!-- Header Top -->
-<?php $header = get_page_by_title('header');?>
 <div class="header__top">
   <div class="container flex">
     <ul class="header__top__accessibility">
       <li class="header__top__accessibility__item">
-        <a class="header__top__accessibility__item__link" href="">Acessibilidade</a>
+        <?php 
+            if ( $link = get_field('link_acessibilidade', 'option') ) {
+                $link_url = esc_url($link["url"]);
+                $link_title = esc_html($link["title"]);
+                $link_target = esc_attr($link["target"] ? $link["target"] : "_self");
+
+                echo <<<END
+
+              <a class="header__top__accessibility__item__link" href="$link_url" target="$link_target">
+                $link_title
+              </a>
+
+              END;
+              }
+            ?>
       </li>
       <li class="header__top__accessibility__item">
         <span class="header__top__accessibility__item__increase">A+</span>
@@ -30,7 +43,21 @@
         </svg>
       </li>
       <li class="header__top__accessibility__item">
-        <a class="header__top__accessibility__item__link" href="">Institucional</a>
+        <?php 
+            if ( $link = get_field('link_institucional', 'option') ) {
+                $link_url = esc_url($link["url"]);
+                $link_title = esc_html($link["title"]);
+                $link_target = esc_attr($link["target"] ? $link["target"] : "_self");
+
+                echo <<<END
+
+              <a class="header__top__accessibility__item__link" href="$link_url" target="$link_target">
+                $link_title
+              </a>
+
+              END;
+              }
+            ?>
       </li>
     </ul>
 

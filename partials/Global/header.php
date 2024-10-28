@@ -6,7 +6,6 @@
 
   <div class="header__bottom">
     <div class="container flex">
-
       <!-- Header bottom -->
       <div class="header__bottom__logo">
         <a class="header__bottom__logo__link" href="">

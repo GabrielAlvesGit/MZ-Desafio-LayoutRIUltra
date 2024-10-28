@@ -33,7 +33,7 @@ function register_my_menu() {
 }
 add_action('init', 'register_my_menu');
 
-// Removendo o ID das nav
+// Função de remove o ID das nav
 function remove_menu_id($nav_menu, $args) {
   $nav_menu = preg_replace('/ id="[^"]+"/', '', $nav_menu); 
   return $nav_menu;
@@ -41,5 +41,25 @@ function remove_menu_id($nav_menu, $args) {
 add_filter('wp_nav_menu', 'remove_menu_id', 10, 2);
 
 /*---------------------------------------------------------------------------------------------*/
+
+/*=============== INCLUDES  ===============*/
+function includeDir($path) {
+  foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path)) as $file) {
+      if ($file->isFile() && $file->getExtension() === 'php') {
+          require_once $file->getPathname();
+      }
+  }
+}
+
+includeDir(__DIR__.'/includes/');
+
+/*=============== MODE DESENVOLVEDOR  ===============*/
+function developmentMode($string) {
+  if( get_field("option") ) : 
+      if( have_rows("option") ): while( have_rows("option") ) : the_row();
+          the_sub_field($string);
+      endwhile; endif;
+  endif;
+}
 
 ?>

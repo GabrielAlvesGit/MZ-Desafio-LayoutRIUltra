@@ -1,0 +1,110 @@
+/*=============== Footer ===============*/
+.footer {
+  background-color: var(--primary-color-abyss-navy-blue);
+  padding: var(--pd-1-5) var(--pd-0) var(--pd-1-5);
+
+  >.container.flex{
+    flex-direction: column;
+    gap: var(--gap-1-5);
+  }
+
+  &__top{
+    display: flex;
+    width: 100%;
+
+    &__icons{      
+      &__list{
+      display: flex;
+      gap: var(--gap-1-875);
+
+        &__item{
+          width: 90px;
+          height: 39.59px;
+
+          &__img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+
+    &__socialMedia{
+      width: 80%;
+
+      &__list{
+        display: flex;
+        gap: 16px;
+        margin: 0 15%;
+
+        &__item{
+          &__link{
+            display: block;
+
+            &__img{
+              filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(68deg) brightness(102%) contrast(105%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    &__copy{
+      &__editor, *{
+        color: var(--text-color-whiter);
+        font-weight: var(--font-normal);
+        font-size: var(--font-size-xss);
+        line-height: 18px;
+        width: 90%;
+
+        >a{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__powered{
+      >a{
+        color: var(--text-color-whiter);
+        font-size: var(--font-size-sm);
+        text-wrap: nowrap;
+      }
+    }
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices - 992px */
+@media screen and (max-width: $screen-lg) {
+  .footer{
+    &__top{
+      flex-direction: column;
+      gap: var(--gap-1-5);
+
+      &__socialMedia{
+        &__list{
+          margin: 0;
+        }
+      }
+    }
+
+    &__bottom{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--gap-1-5);
+
+      &__copy{
+        &__editor, *{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

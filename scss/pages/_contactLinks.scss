@@ -1,0 +1,33 @@
+/*=============== Contac links ===============*/
+.pageHome__contactLinks{
+  padding: var(--pd-0-938) var(--pd-0);
+  background-color: var(--primary-color-abyss-navy-blue);
+
+  &__list{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+    &__item{
+      &__link{
+        color: var(--title-color-whiter);
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-bold);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices - 992px */
+@media screen and (max-width: $screen-lg) {
+  .pageHome__contactLinks{
+    &__list{
+      flex-direction: column;
+      gap: var(--gap-1-25);
+    }
+  }
+}

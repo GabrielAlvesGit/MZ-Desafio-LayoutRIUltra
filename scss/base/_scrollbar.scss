@@ -1,6 +1,6 @@
 /* ======= Scroll Styles ======= */
 ::-webkit-scrollbar-track {
-  background-color: var(--secondary-color-white);
+  background-color: var(--primary-color-white);
 }
 
 ::-webkit-scrollbar {
@@ -8,10 +8,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color-forest-darke);
+  background-color: var(--primary-color-abyss-navy-blue);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-color-forest-green);
+  background-color: var(--body-color-black-transparent);
 }

@@ -1,35 +1,14 @@
+<!-- Banner -->
 <section class="pageHome__banners">
   <article class="pageHome__banners__banner">
     <!-- Banner -->
     <div class="pageHome__banners__banner__list">
+      <?php if(have_rows('banner_group')): while (have_rows('banner_group')) : the_row(); ?>
       <div class="pageHome__banners__banner__list__item">
-        <img src="https://ri.ultra.com.br/wp-content/uploads/sites/1274/2023/09/tela-04.png" alt="" />
-        <p>Lorem</p>
+        <img src="<?php the_sub_field('banner'); ?>" alt="" />
+        <div class="pageHome__banners__banner__list__item__editor"><?php the_sub_field('editor'); ?></div>
       </div>
-
-      <div class="pageHome__banners__banner__list__item">
-        <img src="https://ri.ultra.com.br/wp-content/uploads/sites/1274/2023/09/tela-01.jpg" alt="" />
-        <p>Lorem</p>
-      </div>
-
-      <div class="pageHome__banners__banner__list__item">
-        <img
-          src="https://ri.ultra.com.br/wp-content/uploads/sites/1274/2024/08/Hidrovias_escuro-scaled-e1724935254893.jpg"
-          alt="" />
-        <p>Lorem</p>
-      </div>
-
-      <div class="pageHome__banners__banner__list__item">
-        <img
-          src="https://ri.ultra.com.br/wp-content/uploads/sites/1274/2024/08/Hidrovias_escuro-scaled-e1724935254893.jpg"
-          alt="" />
-        <p>Lorem</p>
-      </div>
-
-      <div class="pageHome__banners__banner__list__item">
-        <img src="https://ri.ultra.com.br/wp-content/uploads/sites/1274/2023/09/tela-03.png" alt="" />
-        <p>Lorem</p>
-      </div>
+      <?php endwhile; endif; ?>
     </div>
 
     <!-- Manual Navigation -->

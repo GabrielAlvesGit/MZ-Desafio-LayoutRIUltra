@@ -1,0 +1,200 @@
+/*=============== Events ===============*/
+.pageHome__events{
+  padding: var(--pd-1-563) var(--pd-0) var(--pd-3-125);
+
+  &__event{
+    display: flex;
+    width: 100%;
+
+    &__stockinfo{
+      width: 50%;
+
+      >h1{
+        position: relative;
+        font-size: var(--font-size-md-sm);
+        font-weight: var(--font-norma);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 133%;
+        color: var(--title-color-abyss-navy-blue);
+        padding: var(--pd-0-625);
+        margin: var(--mb-0) var(--mb-0) var(--mb-1-875) var(--mb-0);
+
+        &::after{
+          content: "";
+          position: absolute;
+          width: 65px;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-bottom: 1.2px solid var(--secondary-color-salty-mermaid-ocean-blue);
+        }
+      }
+
+      &__boxs{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        &__box{
+          &__left{
+           &__ticker{
+            color: var(--title-color-abyss-navy-blue);
+            font-size: var(--font-size-md-sm);
+            font-weight: var(--font-semi-bold);
+            line-height: 24px;
+            text-align: center;
+           }
+
+           &__variation{
+            font-size: 14px;
+            color: #e63329;
+           }
+
+           &__price{
+            font-size: var(--font-size-xxxl-sm);
+            font-weight: var(--font-light);
+            color: var(--secondary-color-salty-mermaid-ocean-blue);
+            line-height: 48px;
+            padding-left: var(--pd-1-563);
+           }
+          }
+        }
+      }
+
+      >svg{
+        width: 100%;
+        height: auto;
+      }
+
+      &__link{
+        font-size: var(--font-size-xxs);
+        color: var(--primary-color-hematite);
+        font-weight: var(--font-semi-bold);
+        text-transform: uppercase;
+        padding-top: var(--pd-0-313);
+        border: 0px solid var(--secondary-color-salty-mermaid-ocean-blue);     
+        cursor: pointer;
+
+        &:hover{
+          border-top: 1px solid var(--secondary-color-salty-mermaid-ocean-blue);     
+          color: var(--title-color-abyss-navy-blue);
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &__calendar{
+      display: flex;
+      width: 50%;  
+      flex-direction: column;
+      padding-left: var(--pd-3-75);
+
+      >h1{
+        width: 100%;
+        position: relative;
+        font-size: var(--font-size-md-sm);
+        font-weight: var(--font-norma);
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 133%;
+        color: var(--title-color-abyss-navy-blue);
+        padding: var(--pd-0-625);
+        margin: var(--mb-0) var(--mb-0) var(--mb-1-875) var(--mb-0);
+
+        &::after{
+          content: "";
+          position: absolute;
+          width: 65px;
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-bottom: 1.2px solid var(--secondary-color-salty-mermaid-ocean-blue);
+        }
+      }
+
+      &__date{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--secondary-color-screeching-white);
+        padding: var(--pd-0) var(--pd-0) var(--pd-1-25);
+        gap: var(--gap-1-5);
+
+        &__item{
+          &__day{
+            font-size: var(--font-size-lg-sm);
+            color: var(--secondary-color-salty-mermaid-ocean-blue);
+            font-weight: var(--font-bold);
+            line-height: 25px;
+          }
+
+          &__month{
+            font-size: var(--font-size-xss);
+            color: var(--secondary-color-damp-royalty);
+            font-weight: var(--font-semi-bold);
+            line-height: 12px;
+            text-transform: uppercase;
+          }
+        }
+
+        &__content{
+          >div{
+            font-size: var(--font-size-sm);
+            color: var(--primary-color-hematite);
+            font-weight: var(--font-normal);
+            line-height: 15.4px;
+          }
+        }
+      }
+
+      &__link{
+        position: relative;
+        font-size: var(--font-size-xxs);
+        color: var(--primary-color-hematite);
+        font-weight: var(--font-semi-bold);
+        text-transform: uppercase;
+        padding-top: var(--pd-0-313);
+        margin: auto 0 0 0;
+        text-align: left;
+        width: 100%;
+        border-top: 1px solid var(--secondary-color-screeching-white);
+        cursor: pointer;
+        &::before{
+          content: "";
+          position: absolute;
+          width: 57px;
+          top: -1px;
+          border-top: 1px solid var(--secondary-color-salty-mermaid-ocean-blue);
+        }
+
+        &:hover{
+          color: var(--title-color-abyss-navy-blue);
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices - 992px */
+@media screen and (max-width: $screen-lg) {
+  .pageHome__events{
+   &__event{
+     flex-direction: column;
+     gap: 20px;
+
+     &__stockinfo{
+       width: 100%;
+     }
+
+     &__calendar{
+       width: 100%;
+       height: 410px;
+       padding-left: var(--pd-0);
+     }
+   }
+  }
+}
